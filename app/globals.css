@@ -3,9 +3,32 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--font-ubuntu); 
-  background-color: #1c1c22; 
+  font-family: var(--font-ubuntu);
+  background-color: #1c1c22;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.header-name-dot-color {
+  color: aquamarine;
+}
+
+.nav-item:hover {
+  color: #4d9f8f;
+  transition: color 300ms ease;
+}
+
+.hire-me-button {
+  background-color: #7fffd4;
+  color: #1c1c22;
+  transition: background-color color 300ms ease;
+}
+
+.hire-me-button:hover {
+  background-color: #4d9f8f;
+  color: #ffffff;
+  text-shadow:
+    0 0 10px #57ffc7,
+    0 0 20px #57ffc7;
 }
