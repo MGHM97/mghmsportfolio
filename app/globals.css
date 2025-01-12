@@ -10,6 +10,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.primary-background-color {
+  background-color: #1c1c22;
+}
+
 .header-name-dot-color {
   color: aquamarine;
 }
