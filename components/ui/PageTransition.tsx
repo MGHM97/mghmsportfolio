@@ -1,15 +1,19 @@
-"use client";
+'use client'
 
-import { AnimatePresence, motion } from "framer-motion";
-import { usePathname } from "next/navigation";
-import { ReactNode } from "react";
+import { AnimatePresence, motion } from 'framer-motion'
+import { usePathname } from 'next/navigation'
+import { ReactNode } from 'react'
 
 interface ChildrenProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
-const PageTransition: React.FC<ChildrenProps> = ({ children }) => {
-  const pathName = usePathname();
+const PageTransition: React.FC<ChildrenProps> = ({
+  children,
+}: {
+  children: ReactNode
+}) => {
+  const pathName = usePathname()
   return (
     <AnimatePresence>
       <div key={pathName}>
@@ -18,13 +22,13 @@ const PageTransition: React.FC<ChildrenProps> = ({ children }) => {
           initial={{ opacity: 1 }}
           animate={{
             opacity: 0,
-            transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
+            transition: { delay: 1, duration: 0.4, ease: 'easeInOut' },
           }}
         />
         {children}
       </div>
     </AnimatePresence>
-  );
-};
+  )
+}
 
-export default PageTransition;
+export default PageTransition

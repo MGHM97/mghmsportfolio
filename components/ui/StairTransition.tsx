@@ -1,11 +1,11 @@
-"use client";
+'use client'
 
-import { AnimatePresence, motion } from "framer-motion";
-import { usePathname } from "next/navigation";
-import Stairs from "./Stairs";
+import { AnimatePresence, motion } from 'framer-motion'
+import { usePathname } from 'next/navigation'
+import Stairs from './Stairs'
 
 const StairTransition = () => {
-  const pathName = usePathname();
+  const pathName = usePathname()
   return (
     <AnimatePresence mode="wait">
       <div key={pathName}>
@@ -22,7 +22,7 @@ const StairTransition = () => {
         /> */}
       </div>
     </AnimatePresence>
-  );
-};
+  )
+}
 
-export default StairTransition;
+export default StairTransition
