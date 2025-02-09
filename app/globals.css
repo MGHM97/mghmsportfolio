@@ -15,7 +15,7 @@ body {
 }
 
 .header-name-dot-color {
-  color: aquamarine;
+  color: #00f2de;
 }
 
 .nav-item:hover {
@@ -24,15 +24,65 @@ body {
 }
 
 .hire-me-button {
-  background-color: #7fffd4;
+  background-color: #00f2de;
   color: #1c1c22;
-  transition: background-color color 300ms ease;
+  transition: background-color color 100ms ease;
 }
 
 .hire-me-button:hover {
-  background-color: #4d9f8f;
+  background-color: #00ac9d;
   color: #ffffff;
   text-shadow:
-    0 0 10px #57ffc7,
-    0 0 20px #57ffc7;
+    0 0 10px #015750,
+    0 0 20px #015750;
+}
+
+.main-h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.main-h2 {
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.main-h3 {
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.outlined-button {
+  white-space: nowrap;
+  padding: 10px;
+  background: transparent;
+  color: #00f2de;
+  border: 1px solid #00f2de;
+  border-radius: 10px;
+
+  transition:
+    background 500ms ease,
+    color 500ms ease;
+}
+
+.outlined-button:hover {
+  background: #00f2de;
+  color: #1c1c22;
+}
+
+@media (min-width: 1280px) {
+  .main-h1 {
+    font-size: 80px;
+  }
+
+  .main-h2 {
+    font-size: 48px;
+  }
+
+  .main-h3 {
+    font-size: 24px;
+  }
 }
